@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22233D"
+        tools:context="com.example.android.tictactoe.GameTypeActivity">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="@string/player_info"
+                android:textAlignment="center"
+                android:textColor="@color/colorHighlight"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0.02"
+                android:background="#4E4B4F"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/player_info_Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorHighlight"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/player1_nameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/player1_Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorHighlight"
+                android:textColorHint="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/player_select_mode"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorHighlight"
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/player_status_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/player_select_mode"
+                    android:textColor="@color/colorHighlight"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/select_type"
+                android:textColor="@color/colorHighlight"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/threeBythree_Button"
+                    style="@android:style/Widget.Material.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:shadowRadius="12"
+                    android:text="@string/threeBythree"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <RadioButton
+                    android:id="@+id/fiveByfive_Button"
+                    style="@android:style/Widget.Material.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/fiveByfive"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_O"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select O"
+                    android:textColor="@color/colorHighlight"
+                    android:textSize="18sp"/>
+                <RadioButton
+                    android:id="@+id/radio_X"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select X"
+                    android:textColor="@color/colorHighlight"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/startGame_button"
+                style="@android:style/Widget.Material.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@color/colorAccent"
+                android:onClick="startSingleGame"
+                android:text="@string/proceedGame"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/home_button"
+                style="@android:style/Widget.Material.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="homeButton"
+                android:text="@string/HomeButton"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

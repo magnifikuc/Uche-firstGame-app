@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#22233D"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/intro_image"
+                android:scaleType="center"
+                android:src="@drawable/tic" />
+
+            <TextView
+                android:id="@+id/tictac_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:text="@string/tic_tac_toe"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/android_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:text="@string/androidText_version"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/single_Player_RButton"
+                    style="@android:style/Widget.Material.Button.Inset"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:shadowRadius="12"
+                    android:text="@string/single_button"
+                    android:textColorHint="@android:color/holo_green_dark"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <RadioButton
+                    android:id="@+id/multiple_Player_RButton"
+                    style="@android:style/Widget.Material.Button.Inset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/multiple_button"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/next_button"
+                style="@android:style/Widget.Material.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:onClick="nextButton"
+                android:text="@string/Next_button"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/Copyright_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="64dp"
+                android:text="@string/author"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic"
+
+                />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</ScrollView>

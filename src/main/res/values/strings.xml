@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TicTacToe Game</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="multiple_button">Multiple Player</string>
+    <string name="single_button">Single Player</string>
+    <string name="androidText_version">Android Version</string>
+    <string name="Next_button">NEXT</string>
+    <string name="author">Developed by Agomuo Uchechukwu</string>
+    <string name="intro_image">tic tac toe front page image</string>
+    <string name="player_info">Player Name and Game Type</string>
+    <string name="player_info_Name">Enter Player Name:</string>
+    <string name="player1_Name">Player1 Name</string>
+    <string name="player2_Name">Player2 Name</string>
+    <string name="player_select_mode">Player Selected Mode:</string>
+    <string name="play_stat_single_mode">Single with Computer</string>
+    <string name="play_stat_multiple_mode">Multiple</string>
+    <string name="select_type">Select Type of Game:</string>
+    <string name="threeBythree">3 X 3 Table</string>
+    <string name="fiveByfive">5 X 5 Table</string>
+    <string name="proceedGame">Proceed to Game</string>
+    <string name="HomeButton">Home</string>
+    <string name="ResetButton">Reset Game</string>
+    <string name="EmptyString">" "</string>
+    <string name="X_Wins">X Wins: </string>
+    <string name="O_Wins">O Wins: </string>
+    <string name="Draw">Draw</string>
+    <string name="X_Wins_value">0</string>
+    <string name="O_Wins_value">0</string>
+    <string name="Draw_value">0</string>
+    <string name="scoreBoard">"Score Board"</string>
+    <string name="read_instructions">Please Read the Instructions</string>
+    <string name="instructions">(1) \tOne of the player chooses ‘O’ and the other ‘X’ to mark their respective cells.\n
+    (2) \tThe game starts with one of the players and the game ends when one of the players who has one whole row/ column/ diagonal filled with his/her respective character (‘O’ or ‘X’).\n
+    (3) \t If no one wins, then the game is said to be draw.</string>
+
+
+</resources>
